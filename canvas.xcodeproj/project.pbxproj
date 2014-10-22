@@ -13,6 +13,7 @@
 		E4C6F59319F735F5009278C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C6F59219F735F5009278C5 /* Images.xcassets */; };
 		E4C6F59619F735F5009278C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C6F59419F735F5009278C5 /* LaunchScreen.xib */; };
 		E4C6F5A219F735F6009278C5 /* canvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6F5A119F735F6009278C5 /* canvasTests.swift */; };
+		E4C6F5AC19F73742009278C5 /* defaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6F5AB19F73742009278C5 /* defaultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E4C6F59B19F735F6009278C5 /* canvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = canvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C6F5A019F735F6009278C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C6F5A119F735F6009278C5 /* canvasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasTests.swift; sourceTree = "<group>"; };
+		E4C6F5AB19F73742009278C5 /* defaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				E4C6F58B19F735F5009278C5 /* AppDelegate.swift */,
 				E4C6F58D19F735F5009278C5 /* ViewController.swift */,
 				E4C6F58F19F735F5009278C5 /* Main.storyboard */,
+				E4C6F5AB19F73742009278C5 /* defaultViewController.swift */,
 				E4C6F59219F735F5009278C5 /* Images.xcassets */,
 				E4C6F59419F735F5009278C5 /* LaunchScreen.xib */,
 				E4C6F58919F735F5009278C5 /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C6F5AC19F73742009278C5 /* defaultViewController.swift in Sources */,
 				E4C6F58E19F735F5009278C5 /* ViewController.swift in Sources */,
 				E4C6F58C19F735F5009278C5 /* AppDelegate.swift in Sources */,
 			);
