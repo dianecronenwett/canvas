@@ -16,30 +16,73 @@
                                 <rect key="frame" x="110" y="64" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="He4-gM-xS8">
-                                <rect key="frame" x="137" y="319" width="46" height="30"/>
+                            <view contentMode="scaleToFill" id="mfA-oP-AOW">
+                                <rect key="frame" x="0.0" y="347" width="320" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" id="1re-pq-zds">
+                                        <rect key="frame" x="115" y="44" width="88" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excited" id="9fV-BH-p1g">
+                                        <rect key="frame" x="12" y="43" width="88" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" id="6ZK-g3-ARv">
+                                        <rect key="frame" x="116" y="131" width="88" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" id="N1I-Rc-iSL">
+                                        <rect key="frame" x="13" y="130" width="88" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue" id="TP3-Ki-x8l">
+                                        <rect key="frame" x="219" y="131" width="88" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" id="wW9-rt-tze">
+                                        <rect key="frame" x="148" y="20" width="20" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" id="3BK-8k-X7N">
+                                        <rect key="frame" x="219" y="44" width="88" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96348852040816324" green="0.96348852040816324" blue="0.96348852040816324" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <action selector="deadButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fx1-VE-6ZF"/>
+                                    <outletCollection property="gestureRecognizers" destination="qFn-mL-gdw" appends="YES" id="DvU-M6-BRT"/>
                                 </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="deadFace" destination="kug-gA-R0I" id="K2T-iw-p3G"/>
+                        <outlet property="downArrow" destination="wW9-rt-tze" id="U4q-Zb-SFM"/>
+                        <outlet property="imageView" destination="kh9-bI-dsS" id="zQ5-QK-3iV"/>
+                        <outlet property="trayView" destination="mfA-oP-AOW" id="vSK-gm-hE8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qFn-mL-gdw">
+                    <connections>
+                        <action selector="onPanTray:" destination="vXZ-lx-hvc" id="oS9-Jw-WdC"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="27" y="436"/>
         </scene>
     </scenes>
     <resources>
         <image name="dead" width="600" height="600"/>
+        <image name="down_arrow" width="20" height="14"/>
+        <image name="excited" width="600" height="600"/>
+        <image name="happy" width="600" height="600"/>
+        <image name="sad" width="600" height="600"/>
+        <image name="tongue" width="600" height="600"/>
+        <image name="wink" width="600" height="600"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
